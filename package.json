@@ -1,12 +1,16 @@
 {
   "name": "techhub-backend",
-  "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "private": true,
+  "description": "Backend APIs & Admin Dashboard for Techhub Website",
+  "license": "MIT",
+  "author": {
+    "name": "Navid Nozhat"
+  },
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
@@ -21,15 +25,11 @@
     "sqlite3": "^5.1.6",
     "styled-components": "5.3.3"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "355f38fa-01a0-4801-bfda-1ccb2a5f4111"
-  },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "355f38fa-01a0-4801-bfda-1ccb2a5f4111"
+  }
 }

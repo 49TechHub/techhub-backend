@@ -3,9 +3,9 @@ module.exports = ({ env }) => ({
   port: env.int("PORT", 1337),
   proxy: {
     enabled: env("PROXY_ENABLED", true),
-    host: env("PROXY_HOST", "t.49g.com"), // Should match the server_name in your Nginx config
-    port: env.int("PROXY_PORT", 80), // Should match the port in your Nginx config
-    ssl: env("PROXY_SSL", false), // Set to true if using HTTPS
+    host: env("PROXY_HOST", "t.49g.com"),
+    port: env.int("PROXY_PORT", 80),
+    ssl: env("PROXY_SSL", false),
   },
   app: {
     keys: env.array("APP_KEYS"),
